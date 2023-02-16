@@ -22,47 +22,39 @@ Some prepatched copies may or may not work. Regardless of which patch is used, t
 
 Changes from the base game:
 
-    -Holding B during dialogue will now automatically skip and close the current textbox. This does not work on choice
-		prompts, menu text, item pickups, or the Sci-Fi chapter's terminal text.
+-Holding B during dialogue will now automatically skip and close the current textbox. This does not work on choice prompts, menu text, item pickups, or the Sci-Fi chapter's terminal text.
 
-    -Text prompts during the Sci-Fi chapter will now accept any input as correct regardless of what was entered.
+-Text prompts during the Sci-Fi chapter will now accept any input as correct regardless of what was entered.
 
-    -The Trial of Technique will now accept any skill usage to break rocks.
+-The Trial of Technique will now accept any skill usage to break rocks.
 
-    -Files 3 and 4 have been removed to accomodate saved randomizer data.
+-Files 3 and 4 have been removed to accomodate saved randomizer data.
 
-    -The Music menu has been replaced with the Randomizer menu and is open from the start of the game.
+-The Music menu has been replaced with the Randomizer menu and is open from the start of the game.
 
-    -[Hard Protect] and [System Recover] have been slightly tweaked to accomodate weaker characters.
+-[Hard Protect] and [System Recover] have been slightly tweaked to accomodate weaker characters.
 
-    -Some characters in the Wrestler chapter have received slight buffs to be closer to the chapter's expected difficulty.
+-Some characters in the Wrestler chapter have received slight buffs to be closer to the chapter's expected difficulty.
 
-    -Fighters can now be refought during the Wrestler chapter.
+-Fighters can now be refought during the Wrestler chapter.
 
-    -The Knight chapter is now available from the start of the game.
-      All chapters must be completed including Knight to unlock the Final Chapter.
+-The Knight chapter is now available from the start of the game. All chapters must be completed including Knight to unlock the Final Chapter.
 
-    -Characters in the Cowboy chapter have received slight buffs to make the chapter more playable.
+-Characters in the Cowboy chapter have received slight buffs to make the chapter more playable.
   
-    -[BonkBonk] and [Teh! Teh!] have been slightly tweaked to make Bel more viable as a starting character.
+-[BonkBonk] and [Teh! Teh!] have been slightly tweaked to make Bel more viable as a starting character.
 
-    -All characters can now learn their skillsets from fighters in the Wrestler chapter, even if those skills are not in the
-		fighters' moveset. When a character is hit with a skill Masaru could normally learn, that character will learn their
-		own skill of that respective level. If a character is hit with a learnable attack, but does not gain a skill, it means
-		that character does not have a corresponding skill in their learnset. Taro and Cube can learn the Robotic Accessory
-		skills via this method, however they will lose any newly gained skills once the fight has ended. Equipping the
-		accessories directly will still unlock the skills as normal in all chapters.
+ -All characters can now learn their skillsets from fighters in the Wrestler chapter, even if those skills are not in the fighters' moveset. When a character is hit with a skill Masaru could normally learn, that character will learn their own skill of that respective level. If a character is hit with a learnable attack, but does not gain a skill, it means that character does not have a corresponding skill in their learnset. Taro and Cube can learn the Robotic Accessory skills via this method, however they will lose any newly gained skills once the fight has ended. Equipping the accessories directly will still unlock the skills as normal in all chapters.
 
-    -If major characters are shuffled, the Inheritors will learn the skill in the same slot that the master's character
-		previously used on them, but will not gain any skills if this is a slot they already had or if this slot has no skill
-		assigned to it. This will very likely change in the future.
+-If major characters are shuffled, the Inheritors will learn the skill in the same slot that the master's character previously used on them, but will not gain any skills if this is a slot they already had or if this slot has no skill assigned to it. This will very likely change in the future.
 		
-	-The item minigame in the Caveman chapter has been slightly changed. The last caveman you need to talk to to receive the materials now
-	 has a unique color from the others to stand out more.
+-The item minigame in the Caveman chapter has been slightly changed. The last caveman you need to talk to to receive the materials now has a unique color from the others to stand out more.
 	 
-	-The scent tutorial in the Caveman chapter can now be skipped by talking to the elder while outside.
+-The scent tutorial in the Caveman chapter can now be skipped by talking to the elder while outside.
 	
-	-King Mammoth has been made always visible.
+-King Mammoth has been made always visible.
+
+-Story progression in the Mecha chapter has been streamlined. *Watanabe no longer needs to be spoken to after he leaves the TV in order for him to get the medicine. The staircase to Toei's basement has been reduced to one screen. The sequence to get Taeko's Panties has now been made an optional sidequest. You no longer need to talk to Kaori to learn that Matsu went to the facility after he leaves the harbor. You no longer need to explore the entire burning orphanage before being able to find Kaori.
 ------------------------------------------------------------------------------------------------
 
 Features:
@@ -154,3 +146,6 @@ Changelog:
 If Character Skills is set to on, when sparring with a character in the Kungfu chapter, when they level up, they will gain the skill that was used on them, replacing the randomized skill they would have otherwise learned in the slot of the skill that was used. If more than one skill has been used, the lower slot takes priority for that level. If the characters has already learned a skill in that slot, the new one will not replace it. If Character Skills is off but Major Characters or Auxillary characters is on, upon level, they will gain the skill in that slot from their normal skill pool.
 *Buriki Daioh is now given 4 random enemy skills if the Character Skills option is set to on.
 *Progression in the Mecha chapter has been changed. See 'changes from the base game' for details.
+	
+	
+	
