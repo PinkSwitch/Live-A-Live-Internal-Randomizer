@@ -91,7 +91,7 @@ Known Issues:
 
     -Holding B during chapter intro and ending cutscenes skips displaying the text, but the cutscene time is unchanged.
 	
-	-The Trial of Mind cannot be entered if Akira is not playable in the Final chapter.
+    -The Trial of Mind cannot be entered if Akira is not playable in the Final chapter.
 	
     -Sprites on the file menu do not currently match the randomized character.
 
@@ -106,10 +106,7 @@ Q/A:
 
 Q: Why do some characters use the wrong colors or appear differently?
 	
-A: Gori, Bel, Zaki, Taro, and Matsu use color sets that are specific to the Caveman and Mecha chapters respectively. They will still attempt to use their normal colors,
-	but outside of these chapters those colors will be different. Characters that are not in the party, such as in the Final chapter or Auxillary Characters during scenes,
-	load their colors differently from the player party and use their original intended colors. This may be subject to change in the future.
-	Characters will still load the original sprites for special animations, as per the lack of matching animations for a character randomized in their slot.
+A: Gori, Bel, Zaki, Taro, and Matsu use color sets that are specific to the Caveman and Mecha chapters respectively. They will still attempt to use their normal colors, but outside of these chapters those colors will be different. Characters that are not in the party, such as in the Final chapter or Auxillary Characters during scenes, load their colors differently from the player party and use their original intended colors. This may be subject to change in the future. Characters will still load the original sprites for special animations, as per the lack of matching animations for a character randomized in their slot.
 	
 Q: How do I use Power Parts if both Taro and Cube are in my party?
 
@@ -128,36 +125,32 @@ Changelog:
 1.0- Initial Release
 
 1.1-
-	Fixed a bug where characters and some skills would randomize off an unrelated variable rather than the seed number.
-	Fixed a bug causing Wrestler chapter characters to not learn any skills unless they were in the Inheritor's moveset.
+
+*Fixed a bug where characters and some skills would randomize off an unrelated variable rather than the seed number.
+*Fixed a bug causing Wrestler chapter characters to not learn any skills unless they were in the Inheritor's moveset.
 	
 2.0-
-	Fixed a bug where some party members would use the wrong menu background.
-	Fixed a bug where Captain Square would appear as Cube on the save/load file screen.
-	Fixed a bug where playing more than one level of Captain Square would permanently replace the Sci-Fi character with Captain Square unless the file was restarted.
-	Fixed character sprites on the overworld not matching which character they actually were.
-	Fixed a bug causing progression to be locked in the Mecha chapter if the skill menu was opened.
-	Fixed a bug causing the Final chapter to not unlock unless Knight was the most recently completed chapter.
-	Fixed a bug causing the Trial of Technique boulders to always require the unrandomized skill list.
-	Fixed a bug where older emulators would crash on the title screen.
-	Fixed a crash that would sometimes occur on the Randomizer menu.
-	Fixed secondary characters not having animations on the Chapter Selection menu.
+
+*Fixed a bug where some party members would use the wrong menu background.
+*Fixed a bug where Captain Square would appear as Cube on the save/load file screen.
+*Fixed a bug where playing more than one level of Captain Square would permanently replace the Sci-Fi character with Captain Square unless the file was restarted.
+*Fixed character sprites on the overworld not matching which character they actually were.
+*Fixed a bug causing progression to be locked in the Mecha chapter if the skill menu was opened.
+*Fixed a bug causing the Final chapter to not unlock unless Knight was the most recently completed chapter.
+*Fixed a bug causing the Trial of Technique boulders to always require the unrandomized skill list.
+*Fixed a bug where older emulators would crash on the title screen.
+*Fixed a crash that would sometimes occur on the Randomizer menu.
+*Fixed secondary characters not having animations on the Chapter Selection menu.
 	
 	
 	
-	All 3 of the Kungfu inheritors will now learn the same ultimate skill when skills are randomized.
-	The caveman minigame to gain crafting materials has been changed to be less tedious.
-	King Mammoth has now been made visible.
-	The scent tutorial in the Caveman chapter has been made optional.
-	The increased running speed will now be applied if the party leader is Oboro, Ryoma, or O-Robo, instead of when the leader was the Ninja character slot.
-	Some non-damaging Skills have been added to the safety skill check.
-	Kungfu sparring has been completely reworked.
-		If Character Skills is set to on, when sparring with a character in the Kungfu chapter, when they level up, they will gain the skill that was used on them, replacing the randomized skill they would have otherwise learned
-		in the slot of the skill that was used. If more than one skill has been used, the lower slot takes priority for that level. If the characters has already learned a skill in that slot,
-		the new one will not replace it. If Character Skills is off but Major Characters or Auxillary characters is on, upon level, they will gain the skill
-		in that slot from their normal skill pool.
-	Buriki Daioh is now given 4 random enemy skills if the Character Skills option is set to on.
-	Progression in the Mecha chapter has been changed. See 'changes from the base game' for details.
-	
-	
-	
+*All 3 of the Kungfu inheritors will now learn the same ultimate skill when skills are randomized.
+*The caveman minigame to gain crafting materials has been changed to be less tedious.
+*King Mammoth has now been made visible.
+*The scent tutorial in the Caveman chapter has been made optional.
+*The increased running speed will now be applied if the party leader is Oboro, Ryoma, or O-Robo, instead of when the leader was the Ninja character slot.
+*Some non-damaging Skills have been added to the safety skill check.
+*Kungfu sparring has been completely reworked.
+If Character Skills is set to on, when sparring with a character in the Kungfu chapter, when they level up, they will gain the skill that was used on them, replacing the randomized skill they would have otherwise learned in the slot of the skill that was used. If more than one skill has been used, the lower slot takes priority for that level. If the characters has already learned a skill in that slot, the new one will not replace it. If Character Skills is off but Major Characters or Auxillary characters is on, upon level, they will gain the skill in that slot from their normal skill pool.
+*Buriki Daioh is now given 4 random enemy skills if the Character Skills option is set to on.
+*Progression in the Mecha chapter has been changed. See 'changes from the base game' for details.
