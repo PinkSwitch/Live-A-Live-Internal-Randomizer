@@ -44,7 +44,8 @@ Changes from the base game:
   
 -[BonkBonk] and [Teh! Teh!] have been slightly tweaked to make Bel more viable as a starting character.
 
- -All characters can now learn their skillsets from fighters in the Wrestler chapter, even if those skills are not in the fighters' moveset. When a character is hit with a skill Masaru could normally learn, that character will learn their own skill of that respective level. If a character is hit with a learnable attack, but does not gain a skill, it means that character does not have a corresponding skill in their learnset. Taro and Cube can learn the Robotic Accessory skills via this method, however they will lose any newly gained skills once the fight has ended. Equipping the accessories directly will still unlock the skills as normal in all chapters.
+ -All characters can now learn their skillsets from fighters in the Wrestler chapter, even if those skills are not in the fighters' moveset. When a character is hit with a skill Masaru could normally learn, that character will learn their own skill of that respective level. If a character is hit with a learnable attack, but does not gain a skill, it means that character does not have a corresponding skill in their learnset. 
+ and Cube can learn the Robotic Accessory skills via this method, however they will lose any newly gained skills once the fight has ended. Equipping the accessories directly will still unlock the skills as normal in all chapters.
 
 -If major characters are shuffled, the Inheritors will learn the skill in the same slot that the master's character previously used on them, but will not gain any skills if this is a slot they already had or if this slot has no skill assigned to it. This will very likely change in the future.
 		
@@ -78,7 +79,7 @@ Features:
 	-Robot Equipment: Randomize which 8 pieces of equipment Cube and Taro will need to equip in order to unlock their extra skills. This will not change which skills they are able to use,
 	  even if the equipment normally uses a skill in battle (they won't be able to learn Bang Bang Booom! if one of their skill equipment is the Cola Bottle, as an example).
 	  There is a new NPC located in the antique shop during the Mecha chapter, Mock Toei, that will tell you which pieces of equipment will unlock skills for robots.
-	  Skill-granting equipment will always be guranteed to be something both Taro and Cube can equip.
+	  Skill-granting equipment will always be guranteed to be something Cube can equip, but Taro may not be able to.
 	  
 	-Character Colors: Menu and battle sprites for characters will be assigned random color sets taken from other characters. Currently, overworld sprites are not affected by this.
 	
@@ -155,6 +156,8 @@ Changelog:
 If Character Skills is set to on, when sparring with a character in the Kungfu chapter, when they level up, they will gain the skill that was used on them, replacing the randomized skill they would have otherwise learned in the slot of the skill that was used. If more than one skill has been used, the lower slot takes priority for that level. If the characters has already learned a skill in that slot, the new one will not replace it. If Character Skills is off but Major Characters or Auxillary characters is on, upon level, they will gain the skill in that slot from their normal skill pool.
 *Buriki Daioh is now given 4 random enemy skills if the Character Skills option is set to on.
 *Progression in the Mecha chapter has been changed. See 'changes from the base game' for details.
-	
-	
-	
+
+*Auxillary Characters setting added.
+*Robot Equipment setting added.	
+*Character Colors setting added.
+*Menu Colors setting added.
