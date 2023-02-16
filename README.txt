@@ -54,7 +54,12 @@ Changes from the base game:
 	
 -King Mammoth has been made always visible.
 
--Story progression in the Mecha chapter has been streamlined. *Watanabe no longer needs to be spoken to after he leaves the TV in order for him to get the medicine. The staircase to Toei's basement has been reduced to one screen. The sequence to get Taeko's Panties has now been made an optional sidequest. You no longer need to talk to Kaori to learn that Matsu went to the facility after he leaves the harbor. You no longer need to explore the entire burning orphanage before being able to find Kaori.
+-Story progression in the Mecha chapter has been streamlined.
+*Watanabe no longer needs to be spoken to after he leaves the TV in order for him to get the medicine.
+*The staircase to Toei's basement has been reduced to one screen.
+*The sequence to get Taeko's Panties has now been made an optional sidequest.
+*You no longer need to talk to Kaori to learn that Matsu went to the facility after he leaves the harbor.
+*You no longer need to explore the entire burning orphanage before being able to find Kaori.
 ------------------------------------------------------------------------------------------------
 
 Features:
@@ -133,6 +138,10 @@ Changelog:
 *Fixed a bug where older emulators would crash on the title screen.
 *Fixed a crash that would sometimes occur on the Randomizer menu.
 *Fixed secondary characters not having animations on the Chapter Selection menu.
+*Fixed the Randomizer menu loading out-of-bounds values for settings.
+*Fixed the Ultimate Technique not being lost if used against Odi Wan Lee. Consequently, XuanYaLianShanQuan will not be lost if it is not the Ultimate Technique.
+*Fixed the File menu showing the wrong character in the Kungfu chapter.
+*Fixed being able to scroll to save slots 3 and 4 after finishing some chapters.
 	
 	
 	
