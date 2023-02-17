@@ -162,7 +162,6 @@ If Character Skills is set to on, when sparring with a character in the Kungfu c
 *Character Colors setting added.
 *Menu Colors setting added.
 
-
-2.1- 
-
-*Fixed a bug where the game would crash after completing a chapter.
+2.1-
+*Fixed a crash occuring on chapter clear.
+*Fixed a crash that could occur on the equipment menu if robot accessories were randomized.
