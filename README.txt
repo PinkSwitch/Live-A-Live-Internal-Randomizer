@@ -165,3 +165,4 @@ If Character Skills is set to on, when sparring with a character in the Kungfu c
 2.1-
 *Fixed a crash occuring on chapter clear.
 *Fixed a crash that could occur on the equipment menu if robot accessories were randomized.
+*Fixed chapter endings taking you to the file load screen instead of the file save screen.
