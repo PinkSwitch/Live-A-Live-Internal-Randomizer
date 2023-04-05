@@ -1,4 +1,4 @@
--LIVE A LIVE RANDOMIZER V1.0-  1/10/2023
+-LIVE A LIVE RANDOMIZER V2.2-  4/04/2023
 
 Welcome to the Live A Live SFC Randomizer! The randomizer is a modification to the base game allowing for randomization of the game's various elements. Randomization is handled inside of the ROM itself, with no need for seeded roms or external programs. In order to use the randomizer, you will need FLIPS (Or any program that can patch .BPS files), as well as a copy of the 2.0 English fan translation patch. Simply apply the patch over the fan translation ROM, and play. From the title screen, you will be taken to the Randomizer menu, which can be opened at any time during normal gameplay by going to the [Sound] option from the pause screen, and selecting the [Randomizer] option. The game can only save data for one seed at a time, but this seed will persist between save files and resets until another seed has been generated. Settings can be changed mid-game, though Major Characters will not take effect on the current chapter unless it is restarted. For more information, as well as feedback, bug reports, or if you want to be notified for updates, join the Randomizer Discord here:
 
@@ -63,27 +63,49 @@ Changes from the base game:
 *You no longer need to explore the entire burning orphanage before being able to find Kaori.
 ------------------------------------------------------------------------------------------------
 
-Features:
-   -Major Characters: Randomize the 8 chapter protagonists. This can result in secondary characters replacing main
-	 characters. No main characters can be duplicates, however a main character may be a duplicate of an existing secondary
-	 character without issue.
-
-   -Character Skills: Randomize which skills each character will learn. Characters will learn one skill on every level, and
-	 some characters may have more skills than they would under normal circumstances. All characters are guranteed to have a
-	 damaging attack skill in the level 1 slot. A single character can not roll duplicate skills, though multiple characters
-	 can potentially share skills.
+Settings:
+   -Character Skills:
+		|Normal: All characters will learn the same skills they would learn in the normal game, at their normal levels.
+		|Shuffled: Skill learnsets will be randomized with each other, and skills will be learned at their normal levels. Each character will have a unique learnset.
+		|Random Restricted: All characters will be given a skillset of 16 randomized skills from any character's learnset. The first skill will always be a damaging skill, and a character cannot learn duplicate skills. However, multiple characters may have the same skill as each other.
+		|Random w/ Enemies: The same as Random Restricted, but allows characters to potentially learn a select few skills that are normally exclusive to enemies, such as Pulsar Walk.
+		|Random w/ Items: The same as Random Restricted, but allows characters to potentially learn skills that can only be used by items, such as Area Great-Heal.
+		|Random Full: The same as Random Restricted, but characters will be able to learn any skill available without restriction.
+			Characters cannot learn any duplicate skills, but may share skills with another character. Each character will gain one skill per level,
+			regardless of how many skills they can normally learn, except at level 15. The first skill learned will always be guranteed to be a damaging attack.
+			If Skills is set to anything other than Normal, Buriki Daioh will gain 4 completely random skills regardless of the skill setting.
+		
+	-Major Characters:
+		|Normal: The 8 chapter protagonists are the same as in the normal game.
+		|Shuffled: The 8 chapter protagonists will be shuffled amongst each other.
+		|Randomized: The 8 chapter protagonists will be randomized to be any potential party member in the game. If Auxillary Characters is not set to Randomized, this will act the same as Shuffled.
+			Characters can not be duplicates regardless of settings chosen. The Master will be replaced with the chosen inheritor, which fall under Auxillary Characters, at the end of the chapter.
+			(NOTE: Currently the Mind Dungeon cannot be accessed if Akira is not able to join the finale party, but this will not affect any endings.)
 	 
-	-Auxillary Characters: Randomizes the secondary party members for each chapter. With the exception of the chosen Kungfu inheritor, only Major characters can enter the Final chapter.
-	  All characters will be guranteed to be unique.
+	-Auxillary Characters:
+		|Normal: Secondary chapter party members will be the same as in the normal game.
+		|Swapped: Secondary chapter party members will be swapped amongst the other party members within that chapter, excluding the protagonist.
+		|Shuffled: Secondary chapter party members will be shuffled amongst other party members across the game, but cannot be any of the major characters.
+		|Randomized: Secondary chapter party members will be randomized to any character, potentially including major characters. If Major Characters is not set to Randomized, this will act the same as Shuffled.
+			Characters can not be duplicated regardless of settings chosen. The mimic in the Ninja chapter will always mirror the leader of that chapter, regardless of which character they actually are.
+			Auxillary Characters are automatically balanced by the chapter they appear in.
+		
 	  
-	-Robot Equipment: Randomize which 8 pieces of equipment Cube and Taro will need to equip in order to unlock their extra skills. This will not change which skills they are able to use,
-	  even if the equipment normally uses a skill in battle (they won't be able to learn Bang Bang Booom! if one of their skill equipment is the Cola Bottle, as an example).
-	  There is a new NPC located in the antique shop during the Mecha chapter, Mock Toei, that will tell you which pieces of equipment will unlock skills for robots.
-	  Skill-granting equipment will always be guranteed to be something Cube can equip, but Taro may not be able to.
+	-Robot Equipment: 
+		|Normal: Cube and Taro will learn extra skills when equipping the Kotobuki Lacquer, Stone Cannon, Kintoto Cannon, Hiyokokko Cannon, Bounce Gun, 100v Laser, Stun Gun, or Plasma Spark.
+		|Random Accessories: Equipment that unlocks extra skills for Cube and Taro will be randomized, but can only be other Accessories.
+		|Random Unique: Equipment that unlocks extra skills for Cube and Taro can be in any equipment slot, but gurantees more than one skill can't be locked on the same equipment slot.
+		|Random Unrestricted: Equipment that unlocks extra skills for Cube and Taro can be in any equipment slot, potentially having multiple skills locked by the same equipment slot.
+			There is a new NPC located in the antique shop's lower floor during the Mecha Chapter. They will tell you which equipment unlocks skills.
+			Skill-granting equipment is guranteed to be something that Cube can equip, but not necessarily Taro.
 	  
-	-Character Colors: Menu and battle sprites for characters will be assigned random color sets taken from other characters. Currently, overworld sprites are not affected by this.
+	-Character Colors:
+		|Normal: Characters will always use their proper colors, barring a few specific instances (see Q/A for more details)
+		|Battle/Menu: Characters' full detail appearance will use a randomly selected color scheme of another character in battles and menus
+		|Overworld Only: Characters will use a randomly selected color scheme while on the overworld, not counting NPC characters (see Q/A for more details)
+		|Full: Characters will use a random, and not necessarily matching, color scheme for their overworld and detailed appearances.
 	
-	-Menu Colors: All menu boxes outside of battle will be assigned a colored theme, ala the box flavors from Earthbound.
+	-Menu Colors: All menu boxes outside of battle will be assigned a colored theme, akin to the box flavors from Earthbound.
 --------------------------------------------------------------------------------------
 Known Issues:
 
@@ -93,11 +115,13 @@ Known Issues:
 	
     -Sprites on the file menu do not currently match the randomized character.
 
-    -Characters with names longer than 6 characters cutoff Great Asia's prefight text.
+    -Characters with names longer than 6 characters occasionally mess with text formatting.
 
     -The Xin Shan Quan master's name overfills the name entry textbox in chapters other than Kungfu.
 
     -The character on the seed/setting input uses incorrect graphics when loaded from the boot menu.
+	
+	-Sometimes Robot Accessory values can be overwritten. The cause is currently unknown.
 
 ---------------------------------------------------------------------------------------------
 Q/A:
@@ -143,9 +167,7 @@ Changelog:
 *Fixed the Ultimate Technique not being lost if used against Odi Wan Lee. Consequently, XuanYaLianShanQuan will not be lost if it is not the Ultimate Technique.
 *Fixed the File menu showing the wrong character in the Kungfu chapter.
 *Fixed being able to scroll to save slots 3 and 4 after finishing some chapters.
-	
-	
-	
+
 *All 3 of the Kungfu inheritors will now learn the same ultimate skill when skills are randomized.
 *The caveman minigame to gain crafting materials has been changed to be less tedious.
 *King Mammoth has now been made visible.
@@ -166,3 +188,50 @@ If Character Skills is set to on, when sparring with a character in the Kungfu c
 *Fixed a crash occuring on chapter clear.
 *Fixed a crash that could occur on the equipment menu if robot accessories were randomized.
 *Fixed chapter endings taking you to the file load screen instead of the file save screen.
+
+2.2-
+*Fixed Auxillary characters randomizing into Major characters if they were shuffled.
+*Fixed the second and third Auxillary characters having their appearance in battle swapped if they were not randomized.
+*Fixed Square's size being incorrect when fighting against him in a character battle.
+*Fixed Auxillary Characters not properly scaling their level or skills.
+*Fixed the Sci-Fi chapter loading the incorrect color for its Major character.
+*Fixed characters losing skills in between levels of Captain Square
+*Fixed some characters appearing to learn the wrong randomized skill at level 16.
+*Fixed the Randomizer menu occasionally initializing the randomizer when it shouldn't on some emulators
+*Fixed the Randomizer menu closing when manually generating the initial seed.
+*Fixed an issue where the same seed would always be loaded when the randomizer was first opened, and consequently would continue using that seed if the menu reinitialized. This also fixes a bug where manual seeds would not work the first time the Randomizer menu was opened.
+*Fixed an obscure issue where characters could learn more skills than they are supposed to during Kungfu sparring.
+*Fixed an issue where any time you used the last skill in your list during the Odi Wang Lee fight, it would be deleted, regardless of if it was the Ultimate technique or not.
+*Fixed Robot Equipment not checking for duplicate values.
+
+*Refactored the Randomizer Menu.
+	Settings can now have nonbinary states, allowing for more varied parameters per setting.
+	All setting state text has been adjusted accordingly.
+	The Boot Randomizer menu will now properly fade into the Randomizer menu itself.
+	The 'Generate' text will now update properly, and the wording has been made more clear. The text will also properly refresh after generation.
+	Pressing 'B' on any setting will now decrement its state.
+*A custom color scheme has been applied to the title screen.
+*The menu will now always use Finale mode.
+	You will be able to view the entire inventory regardless of the current chapter.
+	You will be able to adjust Equipment, Formation, and view skills regardless of the current chapter.
+	The inventory will still be wiped when entering the Finale.
+*Cube and Taro can now level up, but will be capped at their normal base levels. This allows them to catch up to how strong they should be if they are balanced into a character slot weaker than they start as.
+*The Xin Shan Quan master can now level up properly in all chapters.
+*The Kungfu major character can no longer level up during the Kungfu chapter.
+*The Kungfu major character will now be balanced to level 10.
+*Auxillary characters will now display their correct names in overworld text.
+*Randomized character colors will no longer be used in the Randomizer menu, to prevent loading them before generation.
+*If Skills are not shuffled, but Major Characters and Auxillary Characters are, the inheritors in the Kungfu chapter will always learn their next level up skill regardless of what was used against them.
+	This does not apply if Xin Shan Quan is the master and Auxillary Characters is set to Normal or Swapped.
+
+	
+	
+*Shuffled state added to Character Skills.
+*Random Restricted state added to Character Skills
+*Random w/ Enemies state added to Character Skills.
+*Random w/ Items state added to Character Skills.
+*Shuffled state added to Major Characters.
+*Swapped state added to Auxillary Characters
+*Shuffled state added to Auxillary Characters.
+*Random Accessories state added to Robot Equipment.
+*Random Unique state added to Robot Equipment.
