@@ -45,7 +45,7 @@ Changes from the base game:
 -[BonkBonk] and [Teh! Teh!] have been slightly tweaked to make Bel more viable as a starting character.
 
  -All characters can now learn their skillsets from fighters in the Wrestler chapter, even if those skills are not in the fighters' moveset. When a character is hit with a skill Masaru could normally learn, that character will learn their own skill of that respective level. If a character is hit with a learnable attack, but does not gain a skill, it means that character does not have a corresponding skill in their learnset. 
- and Cube can learn the Robotic Accessory skills via this method, however they will lose any newly gained skills once the fight has ended. Equipping the accessories directly will still unlock the skills as normal in all chapters.
+Taro and Cube can learn the Robotic Accessory skills via this method, however they will lose any newly gained skills once the fight has ended. Equipping the accessories directly will still unlock the skills as normal in all chapters.
 
 -If major characters are shuffled, the Inheritors will learn the skill in the same slot that the master's character previously used on them, but will not gain any skills if this is a slot they already had or if this slot has no skill assigned to it. This will very likely change in the future.
 		
