@@ -1,4 +1,4 @@
--LIVE A LIVE RANDOMIZER V2.2-  4/04/2023
+-LIVE A LIVE RANDOMIZER V1.0-  1/10/2023
 
 Welcome to the Live A Live SFC Randomizer! The randomizer is a modification to the base game allowing for randomization of the game's various elements. Randomization is handled inside of the ROM itself, with no need for seeded roms or external programs. In order to use the randomizer, you will need FLIPS (Or any program that can patch .BPS files), as well as a copy of the 2.0 English fan translation patch. Simply apply the patch over the fan translation ROM, and play. From the title screen, you will be taken to the Randomizer menu, which can be opened at any time during normal gameplay by going to the [Sound] option from the pause screen, and selecting the [Randomizer] option. The game can only save data for one seed at a time, but this seed will persist between save files and resets until another seed has been generated. Settings can be changed mid-game, though Major Characters will not take effect on the current chapter unless it is restarted. For more information, as well as feedback, bug reports, or if you want to be notified for updates, join the Randomizer Discord here:
 
@@ -18,6 +18,7 @@ Which patch file should I use?
 	(JP) should be patched over the original Japanese rom.
 	(EN) should be patched over the english translation.
 Some prepatched copies may or may not work. Regardless of which patch is used, the Randomizer will still be in English.
+Additional credits to Sara for helping to gather data for the Buriki Daioh skills randomizer!
 
 
 Changes from the base game:
@@ -45,7 +46,7 @@ Changes from the base game:
 -[BonkBonk] and [Teh! Teh!] have been slightly tweaked to make Bel more viable as a starting character.
 
  -All characters can now learn their skillsets from fighters in the Wrestler chapter, even if those skills are not in the fighters' moveset. When a character is hit with a skill Masaru could normally learn, that character will learn their own skill of that respective level. If a character is hit with a learnable attack, but does not gain a skill, it means that character does not have a corresponding skill in their learnset. 
-Taro and Cube can learn the Robotic Accessory skills via this method, however they will lose any newly gained skills once the fight has ended. Equipping the accessories directly will still unlock the skills as normal in all chapters.
+ and Cube can learn the Robotic Accessory skills via this method, however they will lose any newly gained skills once the fight has ended. Equipping the accessories directly will still unlock the skills as normal in all chapters.
 
 -If major characters are shuffled, the Inheritors will learn the skill in the same slot that the master's character previously used on them, but will not gain any skills if this is a slot they already had or if this slot has no skill assigned to it. This will very likely change in the future.
 		
@@ -122,6 +123,8 @@ Known Issues:
     -The character on the seed/setting input uses incorrect graphics when loaded from the boot menu.
 	
 	-Sometimes Robot Accessory values can be overwritten. The cause is currently unknown.
+	
+	-During Oersted's final chapter, all bosses will use the same skills as Buriki Daioh if skills are shuffled.
 
 ---------------------------------------------------------------------------------------------
 Q/A:
@@ -235,3 +238,11 @@ If Character Skills is set to on, when sparring with a character in the Kungfu c
 *Shuffled state added to Auxillary Characters.
 *Random Accessories state added to Robot Equipment.
 *Random Unique state added to Robot Equipment.
+2.3-
+*Fixed a softlock that would occur while controlling Buriki Daioh if Oersted was the Near Future major character
+*Fixed a bug preventing seeds from generating if Auxillary characters was set to 'Randomized'
+*Fixed a bug where overworld characters would use invalid color schemes if Character Colors was set to randomizer overworld colors.
+*Significantly modified the main generator code to hopefully allow for more random outcomes.
+*Tweaked Buriki Daioh's skill randomization. Now, each skill should be effective against each of the fight types Buriki Daioh encounters, and skills will never be too weak to fight OD-10.
+*Fixed a bug were seed values would not saved across resets.
+--------------------------------------------------------
